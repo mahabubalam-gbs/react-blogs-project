@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Blog = ({ blog }) => {
-    const { cover, title } = blog;
+    const { cover, title, author, author_img, posted_date } = blog;
     return (
         <div className='py-10 w-3/4'>
             <div className="card bg-base-100 shadow-sm w-full">
@@ -11,7 +11,17 @@ const Blog = ({ blog }) => {
                         src={cover}
                         alt="image" />
                 </figure>
-
+                <div className="author pt-6 flex">
+                    <div className="avatar">
+                        <div className="w-16 rounded-full">
+                            <img src={author_img} />
+                        </div>
+                    </div>
+                    <div className='author-details pl-5'>
+                        <h3 className='text-lg text-gray-200 font-semibold'>{author}</h3>
+                        <h5 className='text-gray-400'>{posted_date}</h5>
+                    </div>
+                </div>
                 <div className="card-body">
                     <h2 className="card-title text-2xl">{title}</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro assumenda ut ea a facere nisi! Facilis necessitatibus possimus reiciendis eveniet temporibus alias a eius dicta nobis! Laboriosam porro commodi voluptas.</p>
