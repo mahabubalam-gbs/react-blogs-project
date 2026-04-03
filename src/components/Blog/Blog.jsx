@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Blog = ({ blog }) => {
-    const { cover } = blog;
+    const { cover, title } = blog;
     return (
-        <div className='py-10'>
+        <div className='py-10 w-3/4'>
             <div className="card bg-base-100 shadow-sm w-full">
 
                 <figure>
@@ -13,10 +13,10 @@ const Blog = ({ blog }) => {
                 </figure>
 
                 <div className="card-body">
-                    <h2 className="card-title">Card Title</h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <h2 className="card-title text-2xl">{title}</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro assumenda ut ea a facere nisi! Facilis necessitatibus possimus reiciendis eveniet temporibus alias a eius dicta nobis! Laboriosam porro commodi voluptas.</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <button className="btn btn-primary">Mark As Read</button>
                     </div>
                 </div>
             </div>
