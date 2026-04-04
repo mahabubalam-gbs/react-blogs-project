@@ -18,8 +18,8 @@ const Blog = ({ blog }) => {
                         </div>
                     </div>
                     <div className='author-details pl-5'>
-                        <h3 className='text-lg text-gray-200 font-semibold'>{author}</h3>
-                        <h5 className='text-gray-400'>{posted_date}</h5>
+                        <h3 className='text-lg text-gray-800 font-semibold'>{author}</h3>
+                        <h5 className='text-gray-600'>{posted_date}</h5>
                     </div>
                 </div>
                 <div className="card-body">
